@@ -1,0 +1,223 @@
+{
+  "usuarios": [
+    {
+      "usuario": "Triagem",
+      "senha": "1501",
+      "tipo": "triagem"
+    },
+    {
+      "usuario": "Médico",
+      "senha": "1501",
+      "tipo": "medico"
+    },
+    {
+      "usuario": "Atendimento",
+      "senha": "1501",
+      "tipo": "atendimento"
+    },
+    {
+      "usuario": "Yan da Silva",
+      "senha": "1005",
+      "tipo": "atendimento"
+    }
+  ],
+  "pacientes": [
+    {
+      "id": 1792674956448,
+      "nome": "Yan da Silva",
+      "cpf": "00000000000",
+      "tipo": "Publico",
+      "status": "atendido",
+      "createdAt": "2026-10-22T13:15:56.448Z"
+    },
+    {
+      "id": 1792677029777,
+      "nome": "João da Silva",
+      "cpf": "1234567775",
+      "tipo": "Publico",
+      "status": "atendido",
+      "createdAt": "2026-10-22T13:50:29.777Z"
+    },
+    {
+      "id": 1792677292537,
+      "nome": "bira",
+      "cpf": "6646446464646464",
+      "tipo": "Convenio",
+      "status": "atendido",
+      "createdAt": "2026-10-22T13:54:52.537Z"
+    },
+    {
+      "id": 1793803268250,
+      "nome": "João da Silva",
+      "cpf": "00000000000",
+      "tipo": "Publico",
+      "status": "aguardando_medico",
+      "createdAt": "2026-11-04T14:41:08.250Z"
+    }
+  ],
+  "triagens": [
+    {
+      "id": 1792675053567,
+      "nome": "Yan da Silva",
+      "sintoma": "resfriado",
+      "temperatura": 39.5,
+      "alergia": "Ibuprofeno",
+      "observacao": "O paciente está sentido dor de cabeça e nas articulações.",
+      "risco": "vermelho",
+      "status": "atendido",
+      "createdAt": "2026-10-22T13:17:33.567Z"
+    },
+    {
+      "id": 1792677143583,
+      "nome": "João da Silva",
+      "sintoma": "resfriado",
+      "temperatura": 39,
+      "alergia": "Nenhuma",
+      "observacao": "O paciente está sentindo dor de cabeça e nas articulações.",
+      "risco": "vermelho",
+      "status": "atendido",
+      "createdAt": "2026-10-22T13:52:23.583Z"
+    },
+    {
+      "id": 1792677377358,
+      "nome": "bira",
+      "sintoma": "infarto",
+      "temperatura": 38,
+      "alergia": "nd",
+      "observacao": "nd",
+      "risco": "vermelho",
+      "status": "atendido",
+      "createdAt": "2026-10-22T13:56:17.358Z"
+    },
+    {
+      "id": 1793804687793,
+      "nome": "Paciente de Demonstração",
+      "sintoma": "dor_leve",
+      "temperatura": 36.5,
+      "alergia": "Nenhuma",
+      "observacao": "Dados fictícios para teste do sistema.",
+      "risco": "verde",
+      "status": "atendido",
+      "createdAt": "2026-11-04T15:04:47.793Z"
+    },
+    {
+      "id": 1793805891737,
+      "nome": "João da Silva",
+      "sintoma": "falta_ar_moderada",
+      "temperatura": 38.5,
+      "alergia": "Nenhuma.",
+      "observacao": "Sente que a garganta está fechada.",
+      "risco": "amarelo",
+      "status": "atendido",
+      "createdAt": "2026-11-04T15:24:51.737Z"
+    }
+  ],
+  "consultas": [
+    {
+      "id": 1792675120767,
+      "paciente": "Yan da Silva",
+      "diagnostico": "Resfriado",
+      "medicacao": "Paracetamol",
+      "obs": "O paciente está sentido dor de cabeça e nas articulações.",
+      "createdAt": "2026-10-22T13:18:40.767Z"
+    },
+    {
+      "id": 1792677228616,
+      "paciente": "João da Silva",
+      "diagnostico": "Febre",
+      "medicacao": "Ibuprofeno",
+      "obs": "O paciente está sentindo dor de cabeça e nas articulações.",
+      "createdAt": "2026-10-22T13:53:48.616Z"
+    },
+    {
+      "id": 1792677443136,
+      "paciente": "bira",
+      "diagnostico": "",
+      "medicacao": "Dipirona",
+      "obs": "nd",
+      "createdAt": "2026-10-22T13:57:23.136Z"
+    },
+    {
+      "id": 1793804836904,
+      "paciente": "Paciente de Demonstração",
+      "diagnostico": "Dores leves",
+      "medicacao": "Dipirona",
+      "obs": "Dados fictícios para teste do sistema.",
+      "createdAt": "2026-11-04T15:07:16.904Z"
+    },
+    {
+      "id": 1793805968474,
+      "paciente": "João da Silva",
+      "diagnostico": "Crise de faltar",
+      "medicacao": "Ibuprofeno",
+      "obs": "Sente que a garganta está fechada.",
+      "createdAt": "2026-11-04T15:26:08.474Z"
+    },
+    {
+      "id": 1793806009401,
+      "paciente": "João da Silva",
+      "diagnostico": "Crise de falta de ar.",
+      "medicacao": "Ibuprofeno",
+      "obs": "Sente que a garganta está fechada.",
+      "createdAt": "2026-11-04T15:26:49.401Z"
+    }
+  ],
+  "chamadas": [
+    {
+      "id": 1793804689984,
+      "paciente": "João da Silva",
+      "localTipo": "GUICHÊ",
+      "localNumero": "01",
+      "createdAt": "2026-11-04T15:04:49.984Z"
+    },
+    {
+      "id": 1793804195240,
+      "paciente": "João da Silva",
+      "localTipo": "GUICHÊ",
+      "localNumero": "01",
+      "createdAt": "2026-11-04T14:56:35.240Z"
+    },
+    {
+      "id": 1793804187264,
+      "paciente": "João da Silva",
+      "localTipo": "GUICHÊ",
+      "localNumero": "01",
+      "createdAt": "2026-11-04T14:56:27.264Z"
+    },
+    {
+      "id": 1793804079025,
+      "paciente": "João da Silva",
+      "localTipo": "GUICHÊ",
+      "localNumero": "01",
+      "createdAt": "2026-11-04T14:54:39.025Z"
+    },
+    {
+      "id": 1792677316048,
+      "paciente": "bira",
+      "localTipo": "GUICHÊ",
+      "localNumero": "01",
+      "createdAt": "2026-10-22T13:55:16.048Z"
+    },
+    {
+      "id": 1792677074632,
+      "paciente": "João da Silva",
+      "localTipo": "GUICHÊ",
+      "localNumero": "01",
+      "createdAt": "2026-10-22T13:51:14.632Z"
+    },
+    {
+      "id": 1792674990935,
+      "paciente": "Yan da Silva",
+      "localTipo": "GUICHÊ",
+      "localNumero": "01",
+      "createdAt": "2026-10-22T13:16:30.935Z"
+    }
+  ],
+  "chamadaAtual": {
+    "id": 1793804689984,
+    "paciente": "João da Silva",
+    "localTipo": "GUICHÊ",
+    "localNumero": "01",
+    "createdAt": "2026-11-04T15:04:49.984Z"
+  }
+}
