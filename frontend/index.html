@@ -58,14 +58,23 @@ document.getElementById("formLogin").addEventListener("submit", async e => {
         mensagem.textContent = erro.message;
     }
 });
-
+/*
 // Atalho para abrir a administração.
 // Para uso real, proteja a página admin com autenticação e autorização no servidor.
 window.addEventListener("keydown", e => {
-    if (e.ctrlKey && e.altKey && e.key.toLowerCase() === "a") {
+    if (e.ctrlKey && e.altKey && e.key === "a" || e.key === "A")) {
         e.preventDefault();
         window.location.href = "admin.html";
     }
+});
+*/
+
+// Atalho secreto: Ctrl + Alt + A redireciona para admin.html
+window.addEventListener("keydown", function(e) {
+  if (e.ctrlKey && e.altKey && (e.key === "a" || e.key === "A")) {
+    e.preventDefault();
+    window.location.href = "admin.html";
+  }
 });
 </script>
 </body>
